@@ -1,0 +1,244 @@
+---
+title: "Phenology Logbook"
+author: "Ana María Muñoz Morales"
+date: "2024-10-08"
+output:
+  html_document:
+    df_print: paged
+    highlight: kate
+    number_sections: yes
+    theme: spacelab
+    toc: yes
+    toc_float: yes
+---
+
+```{css, echo=FALSE}
+<style>
+  /* Color de fondo de la página y estilo general */
+  body {
+    background-color: #f0f8ff; /* Color de fondo general */
+    color: #333333;            /* Color del texto */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Estilo de los encabezados */
+  h1 {
+    color: #8E6189; /* Color de los encabezados H1 */
+  }
+
+  h2 {
+    color: #D7A7C7; /* Color de los encabezados H2 */
+  }
+
+  h3, h4, h5 {
+    color: #D7A7C7; /* Color de los encabezados H3, H4, H5 */
+  }
+
+  /* Estilo de los párrafos */
+  p {
+    color: #696969; /* Color del texto de los párrafos */
+  }
+
+  /* Estilo de los enlaces */
+  a {
+    color: #2C5985; /* Color de los enlaces */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+<div style="text-align: center;">
+  <img src="C:/Users/anamaria/Desktop/CISIC_PROYECTO/Curso_phenology/Portada.png" width="500px">
+</div>
+
+
+# **Tree Phenology Analysis** º
+
+## **Tree Dormancy**
+
+The study of winter dormancy in temperate deciduous trees is crucial for understanding how these plants survive unfavorable winter conditions. Dormancy is a complex physiological process that requires specific environmental cues, particularly chilling temperatures, to transition through various phases of dormancy. 
+
+### **Phases of Dormancy:**
+
+  Dormancy is divided into three main phases:
+
+  1. Dormancy Induction: Triggered by decreasing photoperiod and temperature, leading to the cessation of growth and leaf fall.
+
+  2. Endo-Dormancy: Characterized by the inability to grow even under favorable conditions, requiring a period of chilling to     overcome this state.
+
+  3. Eco-Dormancy: Buds regain the capacity to grow but do not immediately resume growth until conditions are favorable.
+
+### **Physiological Processes:**
+
+  The physiological processes regulating dormancy can be categorized into four main themes:
+
+  1. Transport: The vascular system's role in transporting water and nutrients is halted during dormancy, affecting both          whole-plant and cellular levels.
+
+  2. Phytohormones: Hormones such as abscisic acid (ABA) and gibberellins (GAs) play critical roles in regulating dormancy        phases and transitions.
+
+  3. Genetic and Epigenetic Regulation: The expression of DORMANCY-ASSOCIATED MADS-box (DAM) genes is linked to dormancy          regulation, with epigenetic mechanisms influencing gene expression.
+
+  4. Carbohydrates: Nonstructural carbohydrates are vital for energy storage and signaling during dormancy, with their dynamics     fluctuating throughout the dormancy phases.
+
+### **Climate Change Implications**
+
+The effects of climate change, particularly warmer winters, pose significant challenges for the dormancy and phenology of temperate trees. These changes may disrupt the timing of dormancy release and affect the viability of fruit production. The review emphasizes the need for improved models that integrate physiological processes and environmental factors to better predict dormancy-related phenomena and adapt to changing climatic conditions.
+
+
+**How do temperature and photoperiod interact to trigger the dormancy phases in trees?**
+
+Temperature and photoperiod interact in complex ways to trigger the dormancy phases in trees, and this interaction can vary significantly among different species and cultivars.
+
+Dormancy Induction: The onset of dormancy is influenced by both decreasing photoperiod and lower temperatures. As the photoperiod shortens after the summer solstice, it serves as a reliable indicator of the changing seasons, with the intensity of this change varying by latitude. For instance, northern regions experience a more significant reduction in photoperiod compared to southern regions, which can affect how trees respond to these signals.
+
+Species-Specific Responses: Different species exhibit varying sensitivities to photoperiod and temperature. For example, while some species may enter dormancy due to short days combined with high temperatures, others, like those in the Rosaceae family, primarily require low nighttime temperatures to initiate dormancy, showing little sensitivity to photoperiod changes.
+
+Endo-Dormancy and Eco-Dormancy: During endo-dormancy, trees cannot grow even under favorable conditions, and this state is controlled by internal factors that require exposure to chilling temperatures for a certain period to overcome. In contrast, eco-dormancy is characterized by buds becoming more responsive to favorable growth conditions, although they remain acclimated to cold. The transition from eco-dormancy to growth is influenced by warm temperatures, which can trigger the resumption of growth after a sufficient chilling period.
+
+## **Experimental and statistical determination of the chilling and forcing periods**
+
+Summary on the determination of dormancy of fruit trees in temperate climates:
+
+**Dormancy in temperate trees:**
+
+During winter, fruit trees go into dormancy to protect themselves from adverse conditions. Dormancy is divided into two phases:
+
+    - Endodormancy, where buds cannot grown event if conditions are favourable.
+    - Ecodormancy, where growth is dependent on environmental conditions such as warmth.
+
+**Need for cold and warmth**
+
+To break endodormancy, trees need to accumulate cold. After this, they enter ecodormancy and need heat to resume growth.
+The cold and heat requirements are specific to each tree variety, affecting their flowering times.
+
+**Experimental determination of dormancy:**
+
+Buds are collected during winter and placed in a growth chamber with optimal conditions. If the buds grow after being in the chamber, it means that dormancy has ended. If they do not grow, the buds need more cold.
+
+**Statistical determination of dormancy**
+
+From phenological record (flowering dates) and temperatures, the cold and warm period can be calculated using statistical methods.
+A common analysis is partial squares regression (PLS), which relates temperatures to flowering dates.
+Cool periods are identified when low temperatures delay flowering, and warm periods when high temperatures promote flowering.
+
+**Methods of heat and cold accumulation**
+
+There are several models for calculating cold accumulation (Chilling Hour Model, Utah Model and Dynamic Model) and heat accumulation (Growing Hour Degrees).
+
+**Applications**
+
+These methods are used both for research on dormancy biology and for practical studies in agriculture, helping to predict the adaptation of cultivars to different climatic regions.
+
+## **Phenology record and BBCH scale**
+
+* **Phenology:** The study of periodic events in the biologycal cycles of plants (and animals)influenced by seasonal and climatic variations. It is key to understanding the development of fruit trees, especially in temperate climates.
+
+* **History of phenology:**Although its observations date back hundreds of years, the term ‘phenology’ was coined by Charles Morin in 1849. It is relevant today because of its ability to help monitor climate change, given that plant cycles are sensitive to small changes in temperature.
+
+* **Applications in agriculture:** Phenology is fundamental to agriculture, as it allows planning planting, harvesting and crop management according to growth stages. It is also key to mitigate risks such as frost and to optimise the use of resources (irrigation, fertilisation).
+
+* **Phenological scales:** These are used to describe plant development. Traditional scales use letters, but the more modern and standardised **BBCH scale** uses a two-digit numerical code system that details the main and secondary stages of plant growth. This scale is applicable to many species and facilitates comparison between crops.
+
+### BBCH scale
+
+The BBCH scale is a phenological coding system used to describe plant development in a uniform and standardised way, applicable to various plant species. It was developed in 1991 by Bleiholder et al. from an earlier phenological scale for cereals created by Zadoks in 1974. The BBCH scale has become a key tool in modern agriculture, as it facilitates the accurate description of the different stages of plant growth, both in monocotyledons (such as cereals) and dicotyledons (such as many fruit species).
+
+**Structure of the BBCH scale**
+
+The BBCH scale is based on a two-digit numerical code describing the main and secondary stages of plant development. This system is very practical because the numbers allow easy and precise identification of the growth stages, regardless of the location or type of crop.
+
+1. Primary stages (one-digit code)
+The main stages of plant growth are represented by a single digit (0 to 9) and cover the main processes occurring during plant development. These stages are common to many species and describe general phases such as germination, vegetative growth, reproductive development and senescence. Below are some examples of the main stages:
+
+0: Germination or bud swelling (in trees).
+1: Emergence or start of sprouting.
+3: Stem or shoot growth.
+5: Appearance of leaves or branches.
+6: Flowering.
+7: Fruit development.
+8: Ripening of fruit.
+9: Senescence or leaf fall, establishment of dormancy.
+
+2. Secondary stages (two-digit code)
+The second digit in the BBCH scale provides a more precise description within each main stage. These secondary stages identify specific steps within the developmental process that is characteristic for each plant species. They are also numbered from 0 to 9.
+
+For example, in the case of shoot growth (main stage 3):
+
+31: Beginning of shoot growth.
+33: Shoot reaches one third of its length.
+39: Shoot reaches its final length.
+
+Or for the fruiting phase (main stage 7):
+
+71: Beginning of fruit development.
+75: 50% of final fruit size.
+79: Fruit reaches its final size.
+
+
+In temperate fruit trees, such as apples, cherries or peaches, the BBCH scale accurately describes each stage from the beginning of bud swelling to leaf drop. This is especially useful for monitoring crop condition and making farm management decisions, such as the optimal time to apply fertilisers, irrigation or phytosanitary treatments.
+
+**Advantages of the BBCH scale**
+
+* Global standardisation: The BBCH scale allows growers, researchers and technicians around the world to speak the same phenological ‘language’. This facilitates the comparison of phenological data between different species and geographical areas.
+
+* Universal application: Although initially developed for cereals, it has been adapted to a wide variety of crops in both temperate and tropical climates, including fruit trees (apples, cherries, olives), cereals, vineyards and even tropical crops such as avocado and mango.
+
+* Accuracy and clarity: The use of numerical codes avoids confusion that can arise with verbal descriptions or the use of letters in older scales. The two-digit system allows for a high level of detail, identifying each growth step in a clear and replicable way.
+
+The BBCH scale is a valuable tool in agriculture and phenological research, providing a standardised methodology that allows accurate monitoring of plant development. This is essential not only for effective crop management, but also for studying the effects of climate change on phenological cycles and optimising agricultural practices.
+
+
+**Importance of phenology today:** Given the impact of climate change, phenology has become a crucial tool for studying how plants are responding to alterations in the seasons, which directly affects agriculture and food production.
+
+
+#### EXERCISES
+
+**1.	Put yourself in the place of a breeder who wants to calculate the temperature requirements of a newly released cultivar. Which method will you use to calculate the chilling and forcing periods? Please justify your answer.**
+
+If I were a breeder trying to calculate the temperature requirements of a new cultivar, I would use the Chill Units method to calculate the chilling period and the Growing Degree Days (GDD) method for the forcing period.
+Justification: The Chill Units method is useful because it measures the number of hours a plant is exposed to low temperatures (usually between 0°C and 7°C) to break dormancy. It’s a well-established approach for understanding the cooling needs of many fruit crops. The Growing Degree Days method is ideal for calculating the heat accumulation a plant needs after chilling, helping to estimate when a plant will continue growing and move to the next development stage. It measures the amount of heat over a base temperature, showing how much warmth is needed for growth.
+
+**2.	Which are the advantages (2) of the BBCH scale compared with earlies scales?**
+
+Two advantages of the BBCH scale compared to earlier scales are:
+Standardization and universality: The BBCH scale can be used for many different plant species, making it easier to communicate and compare results worldwide. Earlier scales were more specific to individual crops or species.
+More detailed descriptions: The BBCH scale offers a precise way to describe each growth stage of the plant, from germination to maturity, using clear numeric codes. This level of detail makes it easier to track plant development compared to older scales, which were often less detailed.
+
+**3.	Classify the following phenological stages of sweet cherry according to the BBCH scale:**
+
+<div style="text-align: center;">
+  <img src="C:/Users/anamaria/Desktop/CISIC_PROYECTO/Curso_phenology/Chapter3_Exercise3.png" width="500px">
+</div>
+
+First image:  stage 5. Inflorescence emergence (main shoot) / heading  
+Second image: stage 6. Flowering (main shoot)  
+Third image: stage 8. Ripening or maturity of fruit and seed
+
+
+
+## **Climate change and impact projection**
+
+
+#### EXERCISES
+
+
+Please document all results of the following assignments in your learning logbook.
+
+**1. List the main drivers of climate change at the decade to century scale, and briefly explain the mechanism through which the currently most important driver affects our climate.**
+
+**2. Explain briefly what is special about temperature dynamics of recent decades, and why we have good reasons to be concerned.**
+
+**3. What does the abbreviation ‘RCP’ stand for, how are RCPs defined, and what is their role in projecting future climates?**
+
+**4. Briefly describe the 4 climate impact projection methods described in the fourth video.**
